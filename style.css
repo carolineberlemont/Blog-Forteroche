@@ -1,22 +1,14 @@
+a
+{
+  color: black;
+}
+aside
+{
+  margin-top: 30px;
+}
 body 
 {
   padding-top: 5rem;
-}
-.header-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
-  /*pbl*/
-  background-image:url(whale.jpg);
-  background-size:cover;
-}
-a
-{
-	color: green;
-}
-
-h2, h3
-{
-	text-align: center;
 }
 footer
 {
@@ -25,7 +17,20 @@ footer
   /*la bordure ne fonctionne pas?*/
   text-align: center;
 }
+h2, h3
+{
+  text-align: center;
+}
+
+.header-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  /*pbl*/
+  background-color: #f6f1d1;
+  background-size:cover;
+}
 .picture
 {
   background-position: center;
 }
+

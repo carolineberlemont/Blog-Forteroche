@@ -15,37 +15,40 @@
  <!-- Entete -->
  
 
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">L'histoire</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	<header>
+        <nav class="navbar navbar-expand-md navbar-light bg-info fixed-top">
+
+            <a class="navbar-brand" href="#">Billet simple pour l'Alaska</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
-        </button>
+            </button>     
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Les épisodes<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">A propos de l'auteur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+              </div>
+        </nav>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Les épisodes<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">A propos de l'auteur</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+        <div class="container-expand">
+
+            <div class="header-template">
+                <h2>Jean FORTEROCHE</h2>
+                <h5><em>Nouveau roman</em></h5>
+                <h1>BILLET SIMPLE POUR L'ALASKA</h1>
+                <h5>Une histoire de Géantes et d'Ecologie</h5>
+            </div>   
         </div>
-    </nav>
+    </header>
 
-    <main role="main" class="container">
-        <div class="header-template">
-            <h2>Jean FORTEROCHE</h2>
-            <h5><em>Nouveau roman</em></h5>
-            <h1>BILLET SIMPLE POUR L'ALASKA</h1>
-            <h5>Une histoire de Géantes et d'Ecologie</h5>
-        </div>   
-    </main>
-</header>
 
 
 
@@ -53,18 +56,18 @@
 <body>
 	<main role="main" class="container">
 		<div class=" row">
-			<div class="col-md-8 bio-main">
+			<div class="col-md-7 mr-4 mt-4 mb-4 blog-main bg-light border rounded">
 				<div id="form-contact"		
 
 					<form action="/action_page.php">
 
-						<div class="form-group">
+						<div class="form-group pt-2">
 						<label id="Nom">Votre Nom</label>
 						<input type="text" class="form-control" id="Nom" placeholder="Jean Forteroche">
 						</div>
 
 						<div class="form-group">
-						<label id="email">email:</label>
+						<label id="email">Email:</label>
 						<input type="email" class="form-control" id="email">
 						</div>
 
@@ -79,72 +82,71 @@
 			</div>
 			
 
-			<aside class="col-md-4 blog-sidebar"> <!-- sidebar -->
+			<aside class="col-md-4 blog-sidebar bg-secondary rounded">
+            <div class="m-3 p-3 bg-light rounded">
+                <h4 class="font-italic">Dernier épisode</h4>
+                <p class="mb-3"><em>Ici devra se trouver un extrait du contenu du dernier épisode</em></p>
+            </div>
 
-	            <div class="p-3 mb-3 bg-light rounded">
-	                <h4 class="font-italic">Dernier épisode</h4>
-	                <p class="mb-0"><em>Ici devra se trouver un extrait du contenu du dernier épisode</em></p>
-	            </div>
+            <div class="p-3 m-3 bg-light rounded">
+                <h4 class="font-italic">Toute l'histoire</h4>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Chap1.  Dans les eaux chaudes du Mexique</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Episode1</a>
+                              <a class="dropdown-item" href="#">Episode2</a>
+                              <a class="dropdown-item" href="#">Episode3</a>
+                            </div>
+                    </li>
 
-	            <div class="p-3">
-	            <h4 class="font-italic">Toute l'histoire</h4>
-	                <ul class="nav nav-pills flex-column">
-	                    <li class="nav-item dropdown">
-	                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Chap1.  Dans les eaux chaudes du Mexique</a>
-	                        <div class="dropdown-menu">
-	                            <a class="dropdown-item" href="#">Episode1</a>
-	                            <a class="dropdown-item" href="#">Episode2</a>
-	                            <a class="dropdown-item" href="#">Episode3</a>
-	                        </div>
-	                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Chap2.  Tel un marathon</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Episode1</a>
+                              <a class="dropdown-item" href="#">Episode2</a>
+                              <a class="dropdown-item" href="#">Episode3</a>
+                            </div>
+                    </li>
 
-	                    <li class="nav-item dropdown">
-	                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Chap2.  Tel un marathon</a>
-	                        <div class="dropdown-menu">
-	                            <a class="dropdown-item" href="#">Episode1</a>
-	                            <a class="dropdown-item" href="#">Episode2</a>
-	                            <a class="dropdown-item" href="#">Episode3</a>
-	                        </div>
-	                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Chap3.  A l'heure du départ</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Episode1</a>
+                              <a class="dropdown-item" href="#">Episode2</a>
+                              <a class="dropdown-item" href="#">Episode3</a>
+                            </div>
+                    </li>
 
-	                    <li class="nav-item dropdown">
-	                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Chap3.  A l'heure du départ</a>
-	                        <div class="dropdown-menu">
-	                            <a class="dropdown-item" href="#">Episode1</a>
-	                            <a class="dropdown-item" href="#">Episode2</a>
-	                            <a class="dropdown-item" href="#">Episode3</a>
-	                        </div>
-	                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Chap4.  Le choc des titans</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Episode1</a>
+                              <a class="dropdown-item" href="#">Episode2</a>
+                              <a class="dropdown-item" href="#">Episode3</a>
+                            </div>
+                    </li>
 
-	                    <li class="nav-item dropdown">
-	                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Chap4.  Le choc des titans</a>
-	                        <div class="dropdown-menu">
-	                            <a class="dropdown-item" href="#">Episode1</a>
-	                            <a class="dropdown-item" href="#">Episode2</a>
-	                            <a class="dropdown-item" href="#">Episode3</a>
-	                        </div>
-	                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Chap5.  Des larmes d'eau salée</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Episode1</a>
+                              <a class="dropdown-item" href="#">Episode2</a>
+                              <a class="dropdown-item" href="#">Episode3</a>
+                            </div>
+                    </li>
 
-	                    <li class="nav-item dropdown">
-	                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Chap5.  Des larmes d'eau salée</a>
-	                        <div class="dropdown-menu">
-	                            <a class="dropdown-item" href="#">Episode1</a>
-	                            <a class="dropdown-item" href="#">Episode2</a>
-	                            <a class="dropdown-item" href="#">Episode3</a>
-	                        </div>
-	                    </li>
-
-	                    <li class="nav-item dropdown">
-	                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Chap6.  Alaska Mon Amour</a>
-	                        <div class="dropdown-menu">
-	                            <a class="dropdown-item" href="#">Episode1</a>
-	                            <a class="dropdown-item" href="#">Episode2</a>
-	                            <a class="dropdown-item" href="#">Episode3</a>
-	                        </div>
-	                    </li>
-	                </ul>
-	            </div>
-	        </aside>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Chap6.  Alaska Mon Amour</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Episode1</a>
+                              <a class="dropdown-item" href="#">Episode2</a>
+                              <a class="dropdown-item" href="#">Episode3</a>
+                            </div>
+                    </li>
+                  </ul>
+             </div>
+            </aside>
 
 		</div>
 	</main><!-- /.container -->
