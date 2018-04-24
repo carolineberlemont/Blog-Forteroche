@@ -6,16 +6,16 @@ require_once('model/CommentManager.php');
 
 function listPosts()
 {
-    $postManager = new PostManager(); // Création d'un objet
-    $posts = $postManager->getPosts(); // Appel d'une fonction de cet objet
+    $postManager = new \CaroBer\blogforteroche\Model\PostManager();
+    $posts = $postManager->getPosts();
 
     require('view/frontend/listPostsView.php');
 }
 
 function post()
 {
-    $postManager = new PostManager();
-    $commentManager = new CommentManager();
+    $postManager = new \CaroBer\blogforteroche\Model\PostManager();
+    $commentManager = new \CaroBer\blogforteroche\Model\CommentManager();
 
     $post = $postManager->getPost($_GET['id']);
     $comments = $commentManager->getComments($_GET['id']);
@@ -25,7 +25,7 @@ function post()
 
 function addComment($postId, $author, $comment)
 {
-    $commentManager = new CommentManager();
+    $commentManager = new \CaroBer\blogforteroche\Model\CommentManager();
 
     $affectedLines = $commentManager->postComment($postId, $author, $comment);
 
