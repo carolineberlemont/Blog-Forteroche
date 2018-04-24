@@ -8,13 +8,13 @@ aside
 }
 body 
 {
-  padding-top: 5rem;
+  padding-top: 6rem;
+  background-color: #0b2027; 
 }
 footer
 {
-  border-top: 2px solide;
+  border-top: 10px solide;
   border-color: green;
-  /*la bordure ne fonctionne pas?*/
   text-align: center;
 }
 h2, h3
@@ -23,14 +23,26 @@ h2, h3
 }
 
 .header-template {
-  padding: 3rem 1.5rem;
+  padding: 24px 12px;
   text-align: center;
-  /*pbl*/
   background-color: #f6f1d1;
   background-size:cover;
 }
 .picture
 {
   background-position: center;
+}
+
+.pseudo
+{
+  display: inline;
+}
+.blue
+{
+  background-color: #56b2bf; 
+}
+.creme
+{
+  background-color: #f6f1d1;
 }
 
