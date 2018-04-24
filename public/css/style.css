@@ -1,0 +1,48 @@
+a
+{
+  color: black;
+}
+aside
+{
+  margin-top: 30px;
+}
+body 
+{
+  padding-top: 6rem;
+  background-color: #0b2027; 
+}
+footer
+{
+  border-top: 10px solide;
+  border-color: green;
+  text-align: center;
+}
+h2, h3
+{
+  text-align: center;
+}
+
+.header-template {
+  padding: 24px 12px;
+  text-align: center;
+  background-color: #f6f1d1;
+  background-size:cover;
+}
+.picture
+{
+  background-position: center;
+}
+
+.pseudo
+{
+  display: inline;
+}
+.blue
+{
+  background-color: #56b2bf; 
+}
+.creme
+{
+  background-color: #f6f1d1;
+}
+
